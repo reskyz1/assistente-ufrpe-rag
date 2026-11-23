@@ -19,4 +19,3 @@ t07,test,Como faço um bolo de chocolate?,,out_of_scope,,Informar o escopo do as
 t08,test,Quando é o trancamento?,,clarify,,Pedir semestre.
 t09,test,Qual o prazo de trancamento em 2028.2?,,unsupported_period,,Informar ausência de calendário de 2028.
 t10,test,Quais as datas de matrícula em 2026.1 e 2026.2?,,clarify,,Pedir consulta de um semestre por vez.
-
