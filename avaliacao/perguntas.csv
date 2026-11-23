@@ -1,0 +1,22 @@
+id,split,question,semester,expected_status,expected_ids,expected_answer
+d01,dev,Em quanto tempo o trancamento de uma disciplina é efetivado?,,ok,rgg-art246-1,"Um dia após a solicitação, podendo desistir nesse intervalo."
+d02,dev,Qual o limite de suspensões de programa?,,ok,rgg-art248-1,"Quatro períodos letivos regulares, consecutivos ou não."
+d03,dev,Posso solicitar suspensão de programa no primeiro período?,,ok,rgg-art250-1,"A regra veda no ingresso, com exceções por saúde, serviço militar e suspensão a posteriori previstas no artigo."
+d04,dev,Quais as datas de matrícula dos alunos regulares em 2026.1?,,ok,cal2026-24,02 e 03 de março de 2026.
+d05,dev,Qual o prazo de trancamento de disciplina em 2026.1?,,ok,cal2026-36,09 a 28 de março de 2026.
+d06,dev,Qual o período para solicitar suspensão de programa em 2026.1?,,ok,cal2026-22,02 de março a 29 de maio de 2026.
+d07,dev,Qual é a capital da França?,,out_of_scope,,Informar o escopo do assistente.
+d08,dev,Qual o prazo de matrícula?,,clarify,,Pedir semestre.
+d09,dev,Qual o prazo de matrícula em 2027.1?,,unsupported_period,,Informar ausência de calendário de 2027.
+d10,dev,Qual o prazo de matrícula em 2026.1?,2026.2,clarify,,Informar conflito entre pergunta e seleção.
+t01,test,Preciso estar quite com a biblioteca para solicitar suspensão de programa?,,ok,rgg-art251-1,Sim. A solicitação exige quitação com bibliotecas e demais serviços. A efetivação ocorre três dias depois.
+t02,test,O que é rematrícula e o que acontece com as faltas anteriores?,,ok,rgg-art241-1,"Permite ajustar ou fazer a matrícula. As faltas anteriores são registradas, sem previsão de reposição do conteúdo e avaliações."
+t03,test,A matrícula extraordinária permite excluir ou substituir uma matrícula já deferida?,,ok,rgg-art244-1,"Só permite acrescentar matrículas, sem excluir, modificar ou substituir as já deferidas."
+t04,test,Quando os alunos regulares solicitam matrícula em 2026.2?,,ok,cal2026-96,03 e 04 de agosto de 2026.
+t05,test,Até quando posso trancar uma disciplina em 2026.2?,,ok,cal2026-107,O período é de 10 a 28 de agosto de 2026.
+t06,test,Qual o prazo de suspensão de programa em 2026.2?,,ok,cal2026-94,03 de agosto a 30 de outubro de 2026.
+t07,test,Como faço um bolo de chocolate?,,out_of_scope,,Informar o escopo do assistente.
+t08,test,Quando é o trancamento?,,clarify,,Pedir semestre.
+t09,test,Qual o prazo de trancamento em 2028.2?,,unsupported_period,,Informar ausência de calendário de 2028.
+t10,test,Quais as datas de matrícula em 2026.1 e 2026.2?,,clarify,,Pedir consulta de um semestre por vez.
+
