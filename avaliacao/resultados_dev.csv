@@ -1,11 +1,11 @@
-id,question,split,answerable,expected_status,status,status_correct,expected_ids,retrieved_ids,precision_at_3,recall_at_3,f1_at_3,hit_at_3,hit_at_1
-d01,Em quanto tempo o trancamento de uma disciplina é efetivado?,dev,True,ok,ok,True,rgg-art246-1,rgg-art246-1;rgg-art245-1;rgg-art251-1,0.3333333333333333,1.0,0.5,True,True
-d02,Qual o limite de suspensões de programa?,dev,True,ok,ok,True,rgg-art248-1,rgg-art248-1;rgg-art249-1;rgg-art250-1,0.3333333333333333,1.0,0.5,True,True
-d03,Posso solicitar suspensão de programa no primeiro período?,dev,True,ok,ok,True,rgg-art250-1,rgg-art250-1;rgg-art248-1;rgg-art249-1,0.3333333333333333,1.0,0.5,True,True
-d04,Quais as datas de matrícula dos alunos regulares em 2026.1?,dev,True,ok,ok,True,cal2026-24,cal2026-24,0.3333333333333333,1.0,0.5,True,True
-d05,Qual o prazo de trancamento de disciplina em 2026.1?,dev,True,ok,ok,True,cal2026-36,cal2026-36,0.3333333333333333,1.0,0.5,True,True
-d06,Qual o período para solicitar suspensão de programa em 2026.1?,dev,True,ok,ok,True,cal2026-22,cal2026-22,0.3333333333333333,1.0,0.5,True,True
-d07,Qual é a capital da França?,dev,False,out_of_scope,out_of_scope,True,,,0.0,0.0,0.0,False,False
-d08,Qual o prazo de matrícula?,dev,False,clarify,clarify,True,,,0.0,0.0,0.0,False,False
-d09,Qual o prazo de matrícula em 2027.1?,dev,False,unsupported_period,unsupported_period,True,,,0.0,0.0,0.0,False,False
-d10,Qual o prazo de matrícula em 2026.1?,dev,False,clarify,clarify,True,,,0.0,0.0,0.0,False,False
+id,question,split,answerable,expected_status,status,status_correct,expected_ids,retrieved_ids,precision_at_3,precision_returned,recall_at_3,f1_at_3,hit_at_3,hit_at_1,reciprocal_rank
+d01,Em quanto tempo o trancamento de uma disciplina é efetivado?,dev,True,ok,ok,True,rgg-art246-1,rgg-art246-1;rgg-art245-1;rgg-art251-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+d02,Qual o limite de suspensões de programa?,dev,True,ok,ok,True,rgg-art248-1,rgg-art248-1;rgg-art249-1;rgg-art250-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+d03,Posso solicitar suspensão de programa no primeiro período?,dev,True,ok,ok,True,rgg-art250-1,rgg-art250-1;rgg-art248-1;rgg-art249-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+d04,Quais as datas de matrícula dos alunos regulares em 2026.1?,dev,True,ok,ok,True,cal2026-24,cal2026-24,0.3333333333333333,1.0,1.0,0.5,True,True,1.0
+d05,Qual o prazo de trancamento de disciplina em 2026.1?,dev,True,ok,ok,True,cal2026-36,cal2026-36,0.3333333333333333,1.0,1.0,0.5,True,True,1.0
+d06,Qual o período para solicitar suspensão de programa em 2026.1?,dev,True,ok,ok,True,cal2026-22,cal2026-22,0.3333333333333333,1.0,1.0,0.5,True,True,1.0
+d07,Qual é a capital da França?,dev,False,out_of_scope,out_of_scope,True,,,0.0,0.0,0.0,0.0,False,False,0.0
+d08,Qual o prazo de matrícula?,dev,False,clarify,clarify,True,,,0.0,0.0,0.0,0.0,False,False,0.0
+d09,Qual o prazo de matrícula em 2027.1?,dev,False,unsupported_period,unsupported_period,True,,,0.0,0.0,0.0,0.0,False,False,0.0
+d10,Qual o prazo de matrícula em 2026.1?,dev,False,clarify,clarify,True,,,0.0,0.0,0.0,0.0,False,False,0.0

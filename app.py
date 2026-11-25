@@ -5,7 +5,7 @@ import os
 import streamlit as st
 from dotenv import load_dotenv
 
-from rag_ufrpe.corpus import ROOT, load_corpus, sources
+from rag_ufrpe.corpus import ROOT, SUPPORTED_SEMESTERS, sources
 
 load_dotenv(ROOT / ".env")
 os.environ.setdefault("HF_HOME", str(ROOT / ".cache" / "huggingface"))
@@ -18,7 +18,7 @@ st.caption("Protótipo acadêmico independente. Base documental conferida em 23/
 
 with st.sidebar:
     st.subheader("Sua consulta")
-    semester_label = st.selectbox("Semestre para consultar prazos", ["Informar na pergunta", "2026.1", "2026.2"])
+    semester_label = st.selectbox("Semestre para consultar prazos", ["Informar na pergunta", *SUPPORTED_SEMESTERS])
     mode = st.selectbox("Formato da resposta", ["Resposta com fontes", "Consultar somente os trechos"])
     st.subheader("Documentos da base")
     for source in sources():
@@ -52,22 +52,18 @@ def render_result(result):
 
 if submitted:
     from rag_ufrpe.generation import answer
-    from rag_ufrpe.retrieval import question_context
+    from rag_ufrpe.retrieval import retrieve
 
     st.session_state.pop("result", None)
     semester = None if semester_label == "Informar na pergunta" else semester_label
-    context = question_context(question, semester)
     try:
         with st.spinner("Consultando os documentos…"):
-            retrieval = {**context, "sources": []}
-            if context["status"] == "ok":
-                load_corpus()
-                retrieval = get_retriever().search(question, semester)
+            retrieval = retrieve(question, semester, get_retriever)
             backend = "sources" if mode == "Consultar somente os trechos" else os.getenv("GENERATION_BACKEND", "local")
             st.session_state["result"] = answer(retrieval, question, backend)
     except FileNotFoundError:
         st.error("Prepare a base com python -m rag_ufrpe preparar e tente novamente.")
-    except (OSError, RuntimeError, ValueError):
+    except (ImportError, OSError, RuntimeError, ValueError):
         st.error("Não foi possível carregar a busca. Confira a instalação e a conexão no primeiro download do modelo.")
 if "result" in st.session_state:
     render_result(st.session_state["result"])

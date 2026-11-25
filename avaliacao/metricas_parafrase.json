@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-25",
+  "split": "parafrase",
+  "k": 3,
+  "cases": 20,
+  "answerable_cases": 17,
+  "abstention_cases": 3,
+  "macro_precision_at_3": 0.3333,
+  "macro_precision_returned": 0.451,
+  "macro_recall_at_3": 0.9412,
+  "macro_f1_at_3": 0.4882,
+  "hit_at_3": 0.9412,
+  "hit_at_1": 0.7647,
+  "mrr_at_3": 0.8431,
+  "answerable_status_accuracy": 0.9412,
+  "abstention_status_accuracy": 0.0,
+  "note": "Amostra autoral pequena. As métricas não avaliam a correção da resposta gerada. Rótulos sujeitos a revisão independente."
+}

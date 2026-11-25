@@ -29,8 +29,8 @@
     "id": "d03",
     "question": "Posso solicitar suspensão de programa no primeiro período?",
     "expected_answer": "A regra veda no ingresso, com exceções por saúde, serviço militar e suspensão a posteriori previstas no artigo.",
-    "answer": "Confira a regra completa no trecho original.\n\n> Art. 250. Não pode ser solicitada suspensão de programa no período letivo de ingresso do(a) discente no programa. Parágrafo único. A suspensão de programa no primeiro período do curso pode ser concedido nos seguintes casos: I - motivo de saúde, devidamente comprovado pela Junta Médica da UFRPE; II - prestação de serviço militar obrigatório, comprovado pela autoridade correspondente; ou III - através da suspensão de programa a posteriori, quando satisfeitas as condições do Art. 248. [1]",
-    "mode": "grounding_warning",
+    "answer": "Não pode ser solicitada suspensão de programa no primeiro período do curso. [1]",
+    "mode": "generated",
     "source_ids": [
       "rgg-art250-1",
       "rgg-art248-1",
@@ -42,8 +42,8 @@
     "id": "d04",
     "question": "Quais as datas de matrícula dos alunos regulares em 2026.1?",
     "expected_answer": "02 e 03 de março de 2026.",
-    "answer": "As datas de matrícula dos alunos regulares em 2026.1 foram 02 e 03. [1]\n\nData registrada na fonte: Março/2026 - 02 e 03.",
-    "mode": "generated",
+    "answer": "Solicitação de matrícula dos alunos regulares e dos alunos em Regime de Observação de Desempenho Acadêmico -R.O.D.A, no SIGAA, em componentes curriculares para o semestre letivo de 2026.1: Março/2026 - 02 e 03. [1]",
+    "mode": "calendar",
     "source_ids": [
       "cal2026-24"
     ],
@@ -53,8 +53,8 @@
     "id": "d05",
     "question": "Qual o prazo de trancamento de disciplina em 2026.1?",
     "expected_answer": "09 a 28 de março de 2026.",
-    "answer": "O prazo de trancamento de disciplina em 2026.1 é de 09 a 28 de março. [1]\n\nData registrada na fonte: Março/2026 - 09 a 28.",
-    "mode": "generated",
+    "answer": "Período de solicitação, no SIGAA, de trancamento de matrícula em turmas para o período letivo de 2026.1: Março/2026 - 09 a 28. [1]",
+    "mode": "calendar",
     "source_ids": [
       "cal2026-36"
     ],
@@ -64,8 +64,8 @@
     "id": "d06",
     "question": "Qual o período para solicitar suspensão de programa em 2026.1?",
     "expected_answer": "02 de março a 29 de maio de 2026.",
-    "answer": "O período para solicitar a suspensão de programa em 2026.1 é de 02/03 a 29/05. [1]\n\nData registrada na fonte: Março/2026 - 02/03 a 29/05.",
-    "mode": "generated",
+    "answer": "Período para solicitação, no SIGAA, de suspensão de programa para o período letivo de 2026.1: Março/2026 - 02/03 a 29/05. [1]",
+    "mode": "calendar",
     "source_ids": [
       "cal2026-22"
     ],
@@ -75,8 +75,8 @@
     "id": "t01",
     "question": "Preciso estar quite com a biblioteca para solicitar suspensão de programa?",
     "expected_answer": "Sim. A solicitação exige quitação com bibliotecas e demais serviços. A efetivação ocorre três dias depois.",
-    "answer": "Sim, você precisa estar quite com a biblioteca para solicitar a suspensão de programa. [1]",
-    "mode": "generated",
+    "answer": "Confira a regra completa no trecho original.\n\n> Art. 251. A suspensão de programa é solicitada pelo(a) discente no sistema de gestão acadêmica em uso e, somente, é realizada se comprovada a quitação do(a) discente com todas as obrigações relativas ao sistema de bibliotecas e demais serviços da UFRPE. Parágrafo único. A suspensão de programa só é efetivada 03 (três) dias após a solicitação, mesmo que a data de efetivação ocorra após o encerramento do prazo previsto no § 2º do Art. 248, sendo facultado ao(à) discente desistir da suspensão durante esse período. [1]",
+    "mode": "grounding_warning",
     "source_ids": [
       "rgg-art251-1",
       "rgg-art253-1",
@@ -88,7 +88,7 @@
     "id": "t02",
     "question": "O que é rematrícula e o que acontece com as faltas anteriores?",
     "expected_answer": "Permite ajustar ou fazer a matrícula. As faltas anteriores são registradas, sem previsão de reposição do conteúdo e avaliações.",
-    "answer": "A rematrícula é uma oportunidade para os estudantes fazerem ajustes na matrícula ou efetivar a matrícula caso ela não tenha sido realizada durante o período de matrícula. As faltas ocorridas antes da efetivação da matrícula serão registradas, mas não há garantia de reposição do conteúdo e das avaliações já ministradas. [1]",
+    "answer": "A rematrícula é efetuada no período estabelecido no Calendário Acadêmico e corresponde à possibilidade do(a) discente efetuar ajustes na sua matrícula ou efetivá-la caso não a tenha feito no período de matrícula. Cabe ao/à discente decidir sobre a conveniência da rematrícula, levando em conta que são registradas faltas nas aulas ocorridas até o dia da efetivação da matrícula e que não se prevê a reposição do conteúdo e das avaliações já ministradas. [1]",
     "mode": "generated",
     "source_ids": [
       "rgg-art241-1",
@@ -101,7 +101,7 @@
     "id": "t03",
     "question": "A matrícula extraordinária permite excluir ou substituir uma matrícula já deferida?",
     "expected_answer": "Só permite acrescentar matrículas, sem excluir, modificar ou substituir as já deferidas.",
-    "answer": "Não é possível excluir, modificar ou substituir matrículas já deferidas [1]",
+    "answer": "Não é possível excluir, modificar ou substituir matrículas já deferidas. [1]",
     "mode": "generated",
     "source_ids": [
       "rgg-art244-1",
@@ -114,8 +114,8 @@
     "id": "t04",
     "question": "Quando os alunos regulares solicitam matrícula em 2026.2?",
     "expected_answer": "03 e 04 de agosto de 2026.",
-    "answer": "O texto não fornece informações específicas sobre quando os alunos regulares solicitam matrícula em 2026.2.",
-    "mode": "abstention",
+    "answer": "Solicitação de matrícula dos alunos regulares e dos alunos em Regime de Observação de Desempenho Acadêmico -R.O.D.A, no SIGAA, em componentes curriculares para o semestre letivo de 2026.2: Agosto/2026 - 03 e 04. [1]",
+    "mode": "calendar",
     "source_ids": [
       "cal2026-96"
     ],
@@ -125,8 +125,8 @@
     "id": "t05",
     "question": "Até quando posso trancar uma disciplina em 2026.2?",
     "expected_answer": "O período é de 10 a 28 de agosto de 2026.",
-    "answer": "Até 28 de agosto de 2026 [1]\n\nData registrada na fonte: Agosto/2026 - 10 a 28.",
-    "mode": "generated",
+    "answer": "Período de solicitação, no SIGAA, de trancamento de matrícula em turmas para o período letivo de 2026.2: Agosto/2026 - 10 a 28. [1]",
+    "mode": "calendar",
     "source_ids": [
       "cal2026-107"
     ],
@@ -136,10 +136,260 @@
     "id": "t06",
     "question": "Qual o prazo de suspensão de programa em 2026.2?",
     "expected_answer": "03 de agosto a 30 de outubro de 2026.",
-    "answer": "O prazo de suspensão de programa em 2026.2 é de agosto/2026 a outubro/2026. [1]\n\nData registrada na fonte: Agosto/2026 - 03/08 a 30/10.",
-    "mode": "generated",
+    "answer": "Período para solicitação, no SIGAA, de suspensão de programa para o período letivo de 2026.2: Agosto/2026 - 03/08 a 30/10. [1]",
+    "mode": "calendar",
     "source_ids": [
       "cal2026-94"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p01",
+    "question": "Depois de pedir o trancamento de uma disciplina, posso mudar de ideia?",
+    "expected_answer": "Sim, durante o dia entre a solicitação e a efetivação.",
+    "answer": "Não é permitido o trancamento de subunidade isolada, aplicando-se ao bloco o prazo referente à sua subunidade que tiver o menor prazo de trancamento. [1]",
+    "mode": "generated",
+    "source_ids": [
+      "rgg-art245-1",
+      "rgg-art246-1",
+      "rgg-art264-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p02",
+    "question": "Em quantos dias a suspensão de programa passa a valer depois do pedido?",
+    "expected_answer": "Três dias após a solicitação.",
+    "answer": "A suspensão de programa só é efetivada 03 (três) dias após a solicitação. [1]",
+    "mode": "generated",
+    "source_ids": [
+      "rgg-art251-1",
+      "rgg-art253-1",
+      "rgg-art248-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p03",
+    "question": "Por quantos semestres posso interromper o curso mantendo o vínculo?",
+    "expected_answer": "Até quatro períodos letivos regulares, consecutivos ou não.",
+    "answer": "Não há informações específicas sobre quantos semestres você pode interromper o curso mantendo o vínculo com a UFRPE.",
+    "mode": "abstention",
+    "source_ids": [
+      "rgg-art231-1",
+      "rgg-art230-1",
+      "rgg-art248-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p04",
+    "question": "Quem pode autorizar suspensão além do limite de quatro períodos?",
+    "expected_answer": "A PREG, em casos justificados.",
+    "answer": "Não há informações específicas sobre quem pode autorizar uma suspensão além dos quatro períodos mencionados na lei.",
+    "mode": "abstention",
+    "source_ids": [
+      "rgg-art248-1",
+      "rgg-art249-1",
+      "rgg-art254-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p05",
+    "question": "Perco o vínculo com a universidade se eu não fizer matrícula?",
+    "expected_answer": "Sim, por abandono de curso, salvo mobilidade ou programa suspenso.",
+    "answer": "Sim, perco o vínculo com a universidade se eu não fizer matrícula. [1]",
+    "mode": "generated",
+    "source_ids": [
+      "rgg-art231-1",
+      "rgg-art230-1",
+      "rgg-art247-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p06",
+    "question": "Qual o limite de horas por semana para quem estuda à noite?",
+    "expected_answer": "28 horas em cursos noturnos, conforme o PPC.",
+    "answer": "Este assistente consulta matrícula e trancamento na graduação presencial da UFRPE.",
+    "mode": "abstention",
+    "source_ids": [],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p07",
+    "question": "Quem faz a matrícula dos aprovados pelo SISU?",
+    "expected_answer": "A PREG matricula automaticamente; o discente confirma o vínculo.",
+    "answer": "Os discentes ingressantes, via SISU, são automaticamente matriculados pela PREG. [1]",
+    "mode": "generated",
+    "source_ids": [
+      "rgg-art230-1",
+      "rgg-art235-3",
+      "rgg-art238-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p08",
+    "question": "Posso trancar disciplina durante as férias?",
+    "expected_answer": "Não é permitido trancamento no período letivo especial de férias.",
+    "answer": "Não é permitido o trancamento de matrícula em período letivo especial de férias, nem a exclusão ou substituição de turmas matriculadas. [1]",
+    "mode": "generated",
+    "source_ids": [
+      "rgg-art264-1",
+      "rgg-art263-1",
+      "rgg-art245-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p09",
+    "question": "Uma turma optativa pode ser cancelada se tiver poucos alunos?",
+    "expected_answer": "Sim, com menos de 5 discentes e sem justificativa pedagógica.",
+    "answer": "Sim, uma turma optativa pode ser cancelada se tiver poucos alunos, conforme previsto na lei. [1]",
+    "mode": "generated",
+    "source_ids": [
+      "rgg-art240-1",
+      "rgg-art247-1",
+      "rgg-art255-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p10",
+    "question": "Posso pedir suspensão de programa depois do prazo por motivo de trabalho?",
+    "expected_answer": "Sim, a suspensão extemporânea admite motivo de trabalho.",
+    "answer": "Sim, você pode pedir uma suspensão de programa por motivo de trabalho. [1]",
+    "mode": "generated",
+    "source_ids": [
+      "rgg-art254-1",
+      "rgg-art250-1",
+      "rgg-art253-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p11",
+    "question": "Como funciona a suspensão de programa a posteriori?",
+    "expected_answer": "Condições do art. 252 e período fixado no calendário (art. 253).",
+    "answer": "A suspensão de programa a posteriori é solicitada pelo(a) discente no sistema de gestão acadêmica em uso, e só é realizada se comprovar a quitação do(a) discente com todas as obrigações relativas ao sistema de bibliotecas e demais serviços da UFRPE. Ela começa após o final do prazo para consolidação das turmas e termina antes do processo de matrícula para o próximo período letivo. [1]",
+    "mode": "generated",
+    "source_ids": [
+      "rgg-art253-1",
+      "rgg-art250-1",
+      "rgg-art252-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p12",
+    "question": "Quando é a rematrícula em 2026.2?",
+    "expected_answer": "10 e 11 de agosto de 2026.",
+    "answer": "Solicitação de rematrícula dos alunos regulares e dos alunos em Regime de Observação de Desempenho Acadêmico -R.O.D.A, no SIGAA, em componentes curriculares para o semestre letivo de 2026.2: Agosto/2026 - 10 e 11. [1]",
+    "mode": "calendar",
+    "source_ids": [
+      "cal2026-103"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p13",
+    "question": "Quando acontece a matrícula extraordinária em 2026.1?",
+    "expected_answer": "16 de março de 2026.",
+    "answer": "Matrícula extraordinária feita pelos alunos, no SIGAA, para o período letivo de 2026.1: Março/2026 - 16. [1]",
+    "mode": "calendar",
+    "source_ids": [
+      "cal2026-43"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p14",
+    "question": "Qual a data limite para pedir REMT em 2026.1?",
+    "expected_answer": "02 de janeiro de 2026.",
+    "answer": "Data limite para requerer matrícula em Regime de Movimentação Temporária (REMT) para o período letivo de 2026.1: Janeiro/2026 - 02. [1]",
+    "mode": "calendar",
+    "source_ids": [
+      "cal2026-3",
+      "cal2026-36",
+      "cal2026-42"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p15",
+    "question": "Qual a carga horária mínima do curso?",
+    "expected_answer": "O recorte não define carga horária mínima. Deve abster-se.",
+    "answer": "Não há informações específicas sobre a carga horária mínima do curso na fonte fornecida.",
+    "mode": "abstention",
+    "source_ids": [
+      "rgg-art232-1",
+      "rgg-art233-1",
+      "rgg-art263-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p16",
+    "question": "Quanto custa a matrícula?",
+    "expected_answer": "Nenhum trecho trata de valores. Deve abster-se.",
+    "answer": "A fonte não traz informação sobre isso.",
+    "mode": "abstention",
+    "source_ids": [
+      "rgg-art242-1",
+      "rgg-art238-1",
+      "rgg-art230-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p17",
+    "question": "Como funciona a biblioteca da UFRPE?",
+    "expected_answer": "Fora do recorte. Deve abster-se.",
+    "answer": "A fonte não traz informação sobre isso.",
+    "mode": "abstention",
+    "source_ids": [
+      "rgg-art229-1",
+      "rgg-art251-1",
+      "rgg-art254-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p18",
+    "question": "Qual o prazo máximo para o trancamento ser efetivado?",
+    "expected_answer": "Um dia após a solicitação.",
+    "answer": "O prazo máximo para o trancamento ser efetivado é 1 (um) dia após a solicitação. [1]",
+    "mode": "generated",
+    "source_ids": [
+      "rgg-art246-1",
+      "rgg-art245-1",
+      "rgg-art254-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p19",
+    "question": "Posso trancar a matrícula em 2026-1?",
+    "expected_answer": "Regra de trancamento de disciplina (efetivação em um dia).",
+    "answer": "Confira a regra completa no trecho original.\n\n> Art. 246. O trancamento de matrícula em um componente curricular só é efetivado 1 (um) dia após a solicitação, mesmo que a data de efetivação ocorra após o encerramento do prazo previsto no Art. 245, sendo facultado ao(à) discente desistir do trancamento durante este período. [1]",
+    "mode": "grounding_warning",
+    "source_ids": [
+      "rgg-art246-1",
+      "rgg-art264-1",
+      "rgg-art230-1"
+    ],
+    "review_status": "pendente_revisao_independente"
+  },
+  {
+    "id": "p20",
+    "question": "Qual a data de trancamento de disciplina em 2026/2?",
+    "expected_answer": "10 a 28 de agosto de 2026.",
+    "answer": "Período de solicitação, no SIGAA, de trancamento de matrícula em turmas para o período letivo de 2026.2: Agosto/2026 - 10 a 28. [1]",
+    "mode": "calendar",
+    "source_ids": [
+      "cal2026-107"
     ],
     "review_status": "pendente_revisao_independente"
   }

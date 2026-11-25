@@ -14,6 +14,8 @@ from pypdf import PdfReader
 ROOT = Path(__file__).resolve().parents[1]
 SOURCES = ROOT / "dados" / "fontes.csv"
 CHUNKS = ROOT / "dados" / "trechos.json"
+# Semestres cobertos pelo calendário da base. Atualize ao incluir outro calendário.
+SUPPORTED_SEMESTERS = ("2026.1", "2026.2")
 ARTICLE = re.compile(r"^\s*Art\.\s*(\d+)\s*[.º°]", re.I)
 MONTH = re.compile(
     r"^\s*(Janeiro|Fevereiro|Março|Abril|Maio|Junho|Julho|Agosto|"
@@ -158,7 +160,7 @@ def calendar_chunks(source, reader):
             continue
         semesters = sorted(set(re.findall(r"20\d{2}\.[12]", description)))
         # A primeira versão cobre somente os dois semestres da graduação presencial de 2026.
-        if len(semesters) != 1 or semesters[0] not in {"2026.1", "2026.2"}:
+        if len(semesters) != 1 or semesters[0] not in SUPPORTED_SEMESTERS:
             continue
         event = "matricula"
         for candidate in ("trancamento", "suspensao", "rematricula", "extraordinaria"):

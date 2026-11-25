@@ -1,0 +1,21 @@
+id,question,split,answerable,expected_status,status,status_correct,expected_ids,retrieved_ids,precision_at_3,precision_returned,recall_at_3,f1_at_3,hit_at_3,hit_at_1,reciprocal_rank
+p01,"Depois de pedir o trancamento de uma disciplina, posso mudar de ideia?",parafrase,True,ok,ok,True,rgg-art246-1,rgg-art245-1;rgg-art246-1;rgg-art264-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,False,0.5
+p02,Em quantos dias a suspensão de programa passa a valer depois do pedido?,parafrase,True,ok,ok,True,rgg-art251-1,rgg-art251-1;rgg-art253-1;rgg-art248-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+p03,Por quantos semestres posso interromper o curso mantendo o vínculo?,parafrase,True,ok,ok,True,rgg-art248-1,rgg-art231-1;rgg-art230-1;rgg-art248-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,False,0.3333333333333333
+p04,Quem pode autorizar suspensão além do limite de quatro períodos?,parafrase,True,ok,ok,True,rgg-art249-1,rgg-art248-1;rgg-art249-1;rgg-art254-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,False,0.5
+p05,Perco o vínculo com a universidade se eu não fizer matrícula?,parafrase,True,ok,ok,True,rgg-art231-1,rgg-art231-1;rgg-art230-1;rgg-art247-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+p06,Qual o limite de horas por semana para quem estuda à noite?,parafrase,True,ok,out_of_scope,False,rgg-art232-1,,0.0,0.0,0.0,0.0,False,False,0.0
+p07,Quem faz a matrícula dos aprovados pelo SISU?,parafrase,True,ok,ok,True,rgg-art230-1,rgg-art230-1;rgg-art235-3;rgg-art238-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+p08,Posso trancar disciplina durante as férias?,parafrase,True,ok,ok,True,rgg-art264-1,rgg-art264-1;rgg-art263-1;rgg-art245-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+p09,Uma turma optativa pode ser cancelada se tiver poucos alunos?,parafrase,True,ok,ok,True,rgg-art240-1,rgg-art240-1;rgg-art247-1;rgg-art255-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+p10,Posso pedir suspensão de programa depois do prazo por motivo de trabalho?,parafrase,True,ok,ok,True,rgg-art254-1,rgg-art254-1;rgg-art250-1;rgg-art253-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+p11,Como funciona a suspensão de programa a posteriori?,parafrase,True,ok,ok,True,rgg-art252-1;rgg-art253-1,rgg-art253-1;rgg-art250-1;rgg-art252-1,0.6666666666666666,0.6666666666666666,1.0,0.8,True,True,1.0
+p12,Quando é a rematrícula em 2026.2?,parafrase,True,ok,ok,True,cal2026-103,cal2026-103,0.3333333333333333,1.0,1.0,0.5,True,True,1.0
+p13,Quando acontece a matrícula extraordinária em 2026.1?,parafrase,True,ok,ok,True,cal2026-43,cal2026-43,0.3333333333333333,1.0,1.0,0.5,True,True,1.0
+p14,Qual a data limite para pedir REMT em 2026.1?,parafrase,True,ok,ok,True,cal2026-3,cal2026-3;cal2026-36;cal2026-42,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+p15,Qual a carga horária mínima do curso?,parafrase,False,no_evidence,ok,False,,rgg-art232-1;rgg-art233-1;rgg-art263-1,0.0,0.0,0.0,0.0,False,False,0.0
+p16,Quanto custa a matrícula?,parafrase,False,no_evidence,ok,False,,rgg-art242-1;rgg-art238-1;rgg-art230-1,0.0,0.0,0.0,0.0,False,False,0.0
+p17,Como funciona a biblioteca da UFRPE?,parafrase,False,no_evidence,ok,False,,rgg-art229-1;rgg-art251-1;rgg-art254-1,0.0,0.0,0.0,0.0,False,False,0.0
+p18,Qual o prazo máximo para o trancamento ser efetivado?,parafrase,True,ok,ok,True,rgg-art246-1,rgg-art246-1;rgg-art245-1;rgg-art254-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+p19,Posso trancar a matrícula em 2026-1?,parafrase,True,ok,ok,True,rgg-art246-1,rgg-art246-1;rgg-art264-1;rgg-art230-1,0.3333333333333333,0.3333333333333333,1.0,0.5,True,True,1.0
+p20,Qual a data de trancamento de disciplina em 2026/2?,parafrase,True,ok,ok,True,cal2026-107,cal2026-107,0.3333333333333333,1.0,1.0,0.5,True,True,1.0

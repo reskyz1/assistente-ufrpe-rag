@@ -6,7 +6,7 @@ import os
 
 from dotenv import load_dotenv
 
-from .corpus import ROOT, build_corpus
+from .corpus import ROOT, SUPPORTED_SEMESTERS, build_corpus
 
 
 def main():
@@ -18,11 +18,14 @@ def main():
     commands.add_parser("preparar", help="Confere os PDFs e extrai os trechos")
     query = commands.add_parser("perguntar", help="Consulta os documentos")
     query.add_argument("question")
-    query.add_argument("--semestre", choices=["2026.1", "2026.2"])
+    query.add_argument("--semestre", choices=SUPPORTED_SEMESTERS)
     query.add_argument("--backend", choices=["local", "ollama", "sources"], default="local")
     query.add_argument("--json", action="store_true")
     evaluate = commands.add_parser("avaliar", help="Avalia a busca, sem avaliar o texto gerado")
-    evaluate.add_argument("--split", choices=["dev", "test", "all"], default="test")
+    evaluate.add_argument("--split", choices=["dev", "test", "parafrase", "all"], default="test")
+    examples = commands.add_parser("exemplos", help="Gera as respostas completas para revisão humana")
+    examples.add_argument("--split", choices=["dev", "test", "parafrase", "all"], default="all")
+    examples.add_argument("--backend", choices=["local", "ollama"], default="local")
     args = parser.parse_args()
     if args.command == "preparar":
         print(f"Base preparada com {len(build_corpus())} trechos.")
@@ -31,13 +34,13 @@ def main():
         from .evaluation import evaluate_retrieval
         print(json.dumps(evaluate_retrieval(args.split), ensure_ascii=False, indent=2))
         return
+    if args.command == "exemplos":
+        from .evaluation import generate_examples
+        print(f"{len(generate_examples(args.split, args.backend))} exemplos gravados em avaliacao/geracao_exemplos.json.")
+        return
     from .generation import answer
-    from .retrieval import Retriever, question_context
-    context = question_context(args.question, args.semestre)
-    retrieval = {**context, "sources": []}
-    if context["status"] == "ok":
-        retrieval = Retriever().search(args.question, args.semestre)
-    result = answer(retrieval, args.question, args.backend)
+    from .retrieval import retrieve
+    result = answer(retrieve(args.question, args.semestre), args.question, args.backend)
     if args.json:
         print(json.dumps(result, ensure_ascii=False, indent=2))
         return

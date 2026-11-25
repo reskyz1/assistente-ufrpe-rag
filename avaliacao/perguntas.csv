@@ -19,3 +19,23 @@ t07,test,Como faço um bolo de chocolate?,,out_of_scope,,Informar o escopo do as
 t08,test,Quando é o trancamento?,,clarify,,Pedir semestre.
 t09,test,Qual o prazo de trancamento em 2028.2?,,unsupported_period,,Informar ausência de calendário de 2028.
 t10,test,Quais as datas de matrícula em 2026.1 e 2026.2?,,clarify,,Pedir consulta de um semestre por vez.
+p01,parafrase,"Depois de pedir o trancamento de uma disciplina, posso mudar de ideia?",,ok,rgg-art246-1,"Sim, durante o dia entre a solicitação e a efetivação."
+p02,parafrase,Em quantos dias a suspensão de programa passa a valer depois do pedido?,,ok,rgg-art251-1,Três dias após a solicitação.
+p03,parafrase,Por quantos semestres posso interromper o curso mantendo o vínculo?,,ok,rgg-art248-1,"Até quatro períodos letivos regulares, consecutivos ou não."
+p04,parafrase,Quem pode autorizar suspensão além do limite de quatro períodos?,,ok,rgg-art249-1,"A PREG, em casos justificados."
+p05,parafrase,Perco o vínculo com a universidade se eu não fizer matrícula?,,ok,rgg-art231-1,"Sim, por abandono de curso, salvo mobilidade ou programa suspenso."
+p06,parafrase,Qual o limite de horas por semana para quem estuda à noite?,,ok,rgg-art232-1,"28 horas em cursos noturnos, conforme o PPC."
+p07,parafrase,Quem faz a matrícula dos aprovados pelo SISU?,,ok,rgg-art230-1,A PREG matricula automaticamente; o discente confirma o vínculo.
+p08,parafrase,Posso trancar disciplina durante as férias?,,ok,rgg-art264-1,Não é permitido trancamento no período letivo especial de férias.
+p09,parafrase,Uma turma optativa pode ser cancelada se tiver poucos alunos?,,ok,rgg-art240-1,"Sim, com menos de 5 discentes e sem justificativa pedagógica."
+p10,parafrase,Posso pedir suspensão de programa depois do prazo por motivo de trabalho?,,ok,rgg-art254-1,"Sim, a suspensão extemporânea admite motivo de trabalho."
+p11,parafrase,Como funciona a suspensão de programa a posteriori?,,ok,rgg-art252-1;rgg-art253-1,Condições do art. 252 e período fixado no calendário (art. 253).
+p12,parafrase,Quando é a rematrícula em 2026.2?,,ok,cal2026-103,10 e 11 de agosto de 2026.
+p13,parafrase,Quando acontece a matrícula extraordinária em 2026.1?,,ok,cal2026-43,16 de março de 2026.
+p14,parafrase,Qual a data limite para pedir REMT em 2026.1?,,ok,cal2026-3,02 de janeiro de 2026.
+p15,parafrase,Qual a carga horária mínima do curso?,,no_evidence,,O recorte não define carga horária mínima. Deve abster-se.
+p16,parafrase,Quanto custa a matrícula?,,no_evidence,,Nenhum trecho trata de valores. Deve abster-se.
+p17,parafrase,Como funciona a biblioteca da UFRPE?,,no_evidence,,Fora do recorte. Deve abster-se.
+p18,parafrase,Qual o prazo máximo para o trancamento ser efetivado?,,ok,rgg-art246-1,Um dia após a solicitação.
+p19,parafrase,Posso trancar a matrícula em 2026-1?,,ok,rgg-art246-1,Regra de trancamento de disciplina (efetivação em um dia).
+p20,parafrase,Qual a data de trancamento de disciplina em 2026/2?,,ok,cal2026-107,10 a 28 de agosto de 2026.
